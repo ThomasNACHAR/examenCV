@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact CV Thomas NACHAR</title>
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="stylesheet" href="./assets/CSS/stylecontact.css">
+</head>
+<body>
+    <video autoplay muted loop>
+        <source src="./assets/videos/contactbg.mp4">
+    </video>
+    <header>
+        <nav>
+            <a href="./index.html">Accueil</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <form action="#" method="post">
+                <fieldset class="nomprenom">
+                    <div class="nom">
+                        <label for="nom"><span>* </span>Nom : </label>
+                        <input type="text"
+                            name="nom"
+                            id="nom"
+                            required
+                            placeholder="NACHAR">
+                    </div>
+                    <div class="prenom">
+                        <label for="prenom"><span>* </span>Prénom : </label>
+                        <input type="text"
+                            name="prenom"
+                            id="prenom"
+                            required
+                            placeholder="Thomas">
+                    </div>
+                    <div class="boutons">
+                        <button id="suivant1">Suivant</button>
+                    </div> 
+                </fieldset>
+                <fieldset class="mailtel" id="mailtel">
+                    <div class="mail">
+                        <label for="mail"><span>* </span>Courrier électronique : </label>
+                        <input type="email"
+                            name="mail"
+                            id="mail"
+                            required
+                            placeholder="thomas.nachar@mail.com">
+                    </div>
+                    <div class="telephone">
+                        <label for="telephone">Téléphone : </label>
+                        <input type="tel" 
+                            name="telephone"
+                            id="telephone"
+                            placeholder="06 78 91 23 45">
+                    </div>
+                    <div class="boutons">
+                        <button id="precedent2">Précédent</button>
+                        <button id="suivant2">Suivant</button>
+                    </div>
+                </fieldset>
+                <fieldset class="sujetmessage">
+                    <div class="sujet">
+                        <label for="sujet">Sujet</label>
+                        <select name="sujet"
+                         id="sujet"
+                          required>
+                            <option value="" selected>---Choisissez un sujet---</option>
+                            <option value="bug">Il y a un problème dans votre CV</option>
+                            <option value="merci">Je voudrais vous remercier pour votre travail</option>
+                            <option value="aide">J'ai besoin d'aide</option>
+                            <option value="entreprise">Je souhaite vous recruter dans mon entreprise</option>
+                            <option value="idee">J'ai une idée pour améliorer votre site</option>
+                            <option value="autre">Autre</option>
+                        </select>                        
+                        <label for="other">Si autre (50 caractères maximum) :</label>
+                        <input type="text"
+                         name="other"
+                          id="other"
+                           placeholder="Votre sujet :"
+                            maxlength="50">
+                    </div>
+                    <div class="message">
+                        <label for="message">Votre message (compris entre 10 et 255 caractères) :</label>
+                        <input type="text"
+                         name="message"
+                          id="message"
+                           minlength="10"
+                            maxlength="255">
+                    </div>
+                    <div class="boutons">
+                        <button id="precedent3">Précédent</button>
+                        <button id="suivant3">Suivant</button>
+                    </div>
+                </fieldset>
+                <button type="submit" class="submit">Envoyer !</button>
+            </form>
+        </div>
+    </main>
+    <footer>&copy; Thomas NACHAR 2023</footer>
+</body>
+</html>

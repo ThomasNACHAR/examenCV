@@ -1,0 +1,128 @@
+/* Variables */
+:root {
+    --visibilityButton: hidden;
+    --displayStep1: none;
+    --displayStep2: flex;
+    --displayStep3: none;
+
+}
+
+/* Background */
+video {
+    display: none;
+    z-index: -10;
+    grid-row: 2 / 10;
+    grid-column: 1 / 11;
+    height: 100%;
+}
+
+
+/* Mise en page */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container form { /*formulaire en forme de bulle au centre*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 5%;
+    height: 60vh;
+    width: 60vh;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset div {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset div label span {
+    color: red;
+}
+
+/* Etapes */
+.nomprenom {
+    display: var(--displayStep1);
+    flex-direction: column;
+    align-items: center;
+}
+
+.mailtel {
+    display: var(--displayStep2);
+    flex-direction: column;
+    align-items: center;
+}
+
+.sujetmessage {
+    display: var(--displayStep3);
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-top: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vh;
+    height: 5vh;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border: 2px solid black;
+}
+
+input {
+    margin-top: 1vh;
+    width: 50vh;
+    height: 5vh;
+    border-radius: 100vh;
+}
+
+/* Boutons de navigation */
+
+fieldset button {
+    margin-top: 1vh;
+    width: 15vh;
+    height: 5vh;
+    border: none;
+    border-radius: 100vh;
+    background: green;
+}
+
+fieldset button:active {
+    background: red;
+}
+
+.boutons {
+    display: flex;
+}
+
+.submit {
+    margin-top: 2vh;
+    width: 35vh;
+    height: 5vh;
+    border: 2px solid black;
+    border-radius: 100vh;
+    background: transparent;
+}
+
+.submit:active {
+    background: blue;
+}
+
+
+
+
+
+
+
+
+

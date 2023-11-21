@@ -44,3 +44,12 @@ h1 {
     grid-row: 4 / 10;
     grid-column: 9 / 11;
 }
+
+.experience {
+    display: flex;
+    flex-direction: column;
+}
+
+.articles {
+    display: flex;
+}

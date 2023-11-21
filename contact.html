@@ -4,13 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact CV Thomas NACHAR</title>
-    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="stylesheet" href="./assets/CSS/styleclone.css">
     <link rel="stylesheet" href="./assets/CSS/stylecontact.css">
 </head>
 <body>
-    <video autoplay muted loop>
-        <source src="./assets/videos/contactbg.mp4">
-    </video>
     <header>
         <nav>
             <a href="./index.html">Accueil</a>
@@ -18,8 +15,25 @@
         </nav>
     </header>
     <main>
-        <div class="container">
+        
             <form action="#" method="post">
+                <input type="radio"
+                 class="btn"
+                  name="btn"
+                   id="btn1"
+                   checked>
+                <input type="radio"
+                   class="btn"
+                    name="btn"
+                     id="btn2">
+                <input type="radio"
+                     class="btn"
+                      name="btn"
+                       id="btn3">
+                <input type="radio"
+                       class="btn"
+                        name="btn"
+                         id="btn4">
                 <fieldset class="nomprenom">
                     <div class="nom">
                         <label for="nom"><span>* </span>Nom : </label>
@@ -38,7 +52,7 @@
                             placeholder="Thomas">
                     </div>
                     <div class="boutons">
-                        <button id="suivant1">Suivant</button>
+                        
                     </div> 
                 </fieldset>
                 <fieldset class="mailtel" id="mailtel">
@@ -57,10 +71,6 @@
                             id="telephone"
                             required
                             placeholder="06 78 91 23 45">
-                    </div>
-                    <div class="boutons">
-                        <button id="precedent2">Précédent</button>
-                        <button id="suivant2">Suivant</button>
                     </div>
                 </fieldset>
                 <fieldset class="choixsujet">
@@ -84,10 +94,6 @@
                            placeholder="Votre sujet :"
                             maxlength="50">
                     </div>
-                    <div class="boutons">
-                        <button id="precedent3">Précédent</button>
-                        <button id="suivant3">Suivant</button>
-                    </div>
                 </fieldset>
                 <fieldset class="choixmessage">
                     <div class="message">
@@ -98,13 +104,10 @@
                            rows="10"
                            required></textarea>
                     </div>
-                    <div class="boutons">
-                        <button id="precedent4">Précédent</button>
-                    </div>
+                    <button type="submit" class="submit">Envoyer !</button>
                 </fieldset>
-                <button type="submit" class="submit">Envoyer !</button>
+                
             </form>
-        </div>
     </main>
     <footer>&copy; Thomas NACHAR 2023</footer>
 </body>

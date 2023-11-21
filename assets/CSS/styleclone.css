@@ -5,29 +5,14 @@
 
 body {
     display: grid;
-    grid-template-rows: repeat(10, 10%);
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(10, 10vh);
+    grid-template-columns: repeat(10, 10%);
 }
 
 header {
     background: black;
-    grid-column: 1 / 100;
     grid-row: 1 / 2;
-}
-
-main {
-    grid-column: 1 / 100;
-    grid-row: 2 / 10;
-}
-
-footer {
-    background: black;
-    grid-column: 1 / 100;
-    grid-row: 10 / 11;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    grid-column: 1 / 11;
 }
 
 header nav {
@@ -37,7 +22,7 @@ header nav {
 
 header nav a {
     width: 50%;
-    height: 25vh;
+    height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,5 +43,20 @@ header nav a:active {
 
 header nav a:hover {
     cursor: pointer;
+}
+
+main {
+    grid-row: 2 / 10;
+    grid-column: 1 / 11;
+}
+
+footer {
+    background: black;
+    grid-row: 10 / 11;
+    grid-column: 1 / 11;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 

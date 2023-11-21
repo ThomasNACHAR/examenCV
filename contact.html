@@ -55,6 +55,7 @@
                         <input type="tel" 
                             name="telephone"
                             id="telephone"
+                            required
                             placeholder="06 78 91 23 45">
                     </div>
                     <div class="boutons">
@@ -62,9 +63,9 @@
                         <button id="suivant2">Suivant</button>
                     </div>
                 </fieldset>
-                <fieldset class="sujetmessage">
+                <fieldset class="choixsujet">
                     <div class="sujet">
-                        <label for="sujet">Sujet</label>
+                        <label for="sujet"><span>* </span>Sujet</label>
                         <select name="sujet"
                          id="sujet"
                           required>
@@ -83,17 +84,22 @@
                            placeholder="Votre sujet :"
                             maxlength="50">
                     </div>
-                    <div class="message">
-                        <label for="message">Votre message (compris entre 10 et 255 caractères) :</label>
-                        <input type="text"
-                         name="message"
-                          id="message"
-                           minlength="10"
-                            maxlength="255">
-                    </div>
                     <div class="boutons">
                         <button id="precedent3">Précédent</button>
                         <button id="suivant3">Suivant</button>
+                    </div>
+                </fieldset>
+                <fieldset class="choixmessage">
+                    <div class="message">
+                        <label for="message"><span>* </span>Votre message :</label>
+                        <textarea name="message"
+                         id="message"
+                          cols="30"
+                           rows="10"
+                           required></textarea>
+                    </div>
+                    <div class="boutons">
+                        <button id="precedent4">Précédent</button>
                     </div>
                 </fieldset>
                 <button type="submit" class="submit">Envoyer !</button>

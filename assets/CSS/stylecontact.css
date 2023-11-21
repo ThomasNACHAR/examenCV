@@ -2,8 +2,9 @@
 :root {
     --visibilityButton: hidden;
     --displayStep1: none;
-    --displayStep2: flex;
+    --displayStep2: none;
     --displayStep3: none;
+    --displayStep4: flex;
 
 }
 
@@ -61,10 +62,22 @@ fieldset div label span {
     align-items: center;
 }
 
-.sujetmessage {
+.choixsujet {
     display: var(--displayStep3);
     flex-direction: column;
     align-items: center;
+}
+
+.choixmessage {
+    display: var(--displayStep4);
+    flex-direction: column;
+    align-items: center;
+}
+
+.message textarea {
+    border-radius: 1vh;
+    height: 30vh;
+    margin-top: 1vh;
 }
 
 label {
@@ -79,12 +92,13 @@ label {
     border: 2px solid black;
 }
 
-input {
+input, select {
     margin-top: 1vh;
     width: 50vh;
     height: 5vh;
     border-radius: 100vh;
 }
+
 
 /* Boutons de navigation */
 
@@ -99,10 +113,6 @@ fieldset button {
 
 fieldset button:active {
     background: red;
-}
-
-.boutons {
-    display: flex;
 }
 
 .submit {
